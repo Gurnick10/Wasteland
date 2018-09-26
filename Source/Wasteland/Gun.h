@@ -44,12 +44,12 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
 	class UAnimInstance* AnimInstance;
 
+	/** Fires a projectile. */
+	void OnFire();
+
 	/** Whether to use motion controller location for aiming. 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
 	uint32 bUsingMotionControllers : 1;
 	*/
-	
-protected:
-	/** Fires a projectile. */
-	void OnFire();
+
 };
